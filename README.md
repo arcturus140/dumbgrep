@@ -25,7 +25,25 @@ optional arguments:
                         max number of matches to print
 ```
 
-### Installation
-Why would you want to do that, you mad, silly person?
+## Packaging
 
-Anyway, if you really want to, clone the repository and run `pip3 install .`. You should then be able to run dumbgrep from the CLI.
+```bash
+python3 setup.py sdist
+```
+
+## Installation
+
+`python3 setup.py install`
+`python3 setup.py develop`
+
+or
+
+`pip3 install .`
+
+
+## Deploy
+
+```bash
+python setup.py register
+python setup.py sdist upload
+```
